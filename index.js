@@ -14,6 +14,7 @@ http
             response.writeHead(400, {
                 "Content-Type": "trext/html",
             });
+                console.log("404 Page has been Visited!");
             response.write("<p>404 Page Not Found!</p>");
             response.end();
             break;
