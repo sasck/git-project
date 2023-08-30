@@ -1,8 +1,24 @@
 const http = require("http");
 
 http
-    .createServer((req, res) => {
-        console.log(res);
-        res.write("<h1>Home Page!</h1>");
-    })
-    .listen(8080);
+   .createServer((req, res) => {
+     switch (requestAnimationFrame.url){
+        case "/":
+            response.writeHead(200, {
+                "Content-Type": "text/html",
+            });
+            response.write("<h1>Home Page!</h1>");
+            response.end();
+            break;
+        default:
+            response.writeHead(400, {
+                "Content-Type": "trext/html",
+            });
+            response.write("<p>404 Page Not Found!</p>");
+            response.end();
+            break;
+     
+
+     }
+   })
+   .listen(8080);
